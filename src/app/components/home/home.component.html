@@ -1,0 +1,28 @@
+<div class="header">
+    <div class="shadow">
+        <div class="bg"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="header-text">Bienvenido</h1>
+            <p class="header-text">Este es mi pequeño rincón donde podrás leer reseñas acerca de distintos juegos y así
+                mismo conocer juegos nuevos e interesantes</p>
+        </div>
+    </div>
+</div>
+<div class="slider">
+    <app-slider>
+        <div appSliderItem *ngFor="let job of jobs" style="margin: 10px; position: relative; ">
+            <mat-card class="example-card">
+                <mat-card-header>
+                    <mat-card-title>{{job.objective}}</mat-card-title>
+                    <mat-card-subtitle>{{job.type}}</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image [src]="job.organizations[0].picture" style="max-height: 30vh;" >
+                <mat-card-actions>
+                    <button class="readButton" (click)="openDetail(job)" mat-button>READ</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </app-slider>
+</div>

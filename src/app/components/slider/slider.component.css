@@ -1,0 +1,23 @@
+
+.slides {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  max-height: 100%;
+}
+
+.slides::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.center {
+  /* height: 50vh; */
+  line-height: 50vh;
+  text-align: center;
+}
+
+.bg {
+  background-color: rgba(0, 128, 0, 0) !important;
+  font-size: 20px;
+}

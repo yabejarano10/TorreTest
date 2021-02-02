@@ -1,0 +1,45 @@
+p {
+  font-family: Lato;
+}
+
+.example-card {
+  min-height: 45vh;
+  max-height: 45vh; 
+  min-width: 20vw;
+  max-width: 20vw;
+}
+
+[appSliderItem] {
+  flex-shrink: 0;
+}
+
+
+.bg {
+  background-image: url('https://i.ytimg.com/vi/-MKapbz0GIo/maxresdefault.jpg');
+  z-index: -220;
+  opacity: 0.4;
+  height: 50vh;
+  box-shadow: 0 0 20px 20px rgb(0, 0, 0) inset;
+}
+
+.header-text {
+  position: relative;
+  margin: 10px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  top: -450%;
+}
+
+.slider {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+.mat-card-title {
+  font-size: 15px !important;
+}
+.readButton{
+  position: absolute;
+  left:    0;
+  bottom:   0;
+}

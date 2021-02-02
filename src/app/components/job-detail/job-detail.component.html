@@ -1,0 +1,13 @@
+<div class="detail-container" *ngIf="isLoaded">
+    <div class="container">
+        <h1 class="centered">{{detail.objective}}</h1>
+    </div>
+
+    <div class="review">
+        <p class="text-light text-left mt-5 " *ngFor="let parag of detail.details">{{parag.code}} - {{parag.content}}</p>
+    </div>
+
+    <div class="score p-3">
+    </div>
+
+</div>

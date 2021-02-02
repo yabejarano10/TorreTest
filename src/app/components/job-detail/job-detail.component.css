@@ -1,0 +1,92 @@
+.container {
+    padding: 0;
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 40vh;
+    MIN-width: 100%;
+    margin: 0;
+}
+
+.header {
+    height: 100%;
+    opacity: 0.5;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+}
+
+.detail-container {
+    padding: 0;
+    position: relative;
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+.review {
+    margin: auto;
+    max-width: 80%;
+    margin-bottom: 1rem;
+}
+
+span{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+    font-size: 3vw;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: center;
+    color: whitesmoke;
+}
+h3{
+    color: whitesmoke;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+/*HEXAGON*/
+
+.hexagon {
+    position: relative;
+    width: 6vw;
+    height: 7vh;
+    background: lightblue;
+}
+
+.hexagon::before, .hexagon::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: lightblue;
+    position: absolute;
+}
+
+.hexagon::before {
+    left: 0%;
+    transform: rotate(60deg);
+}
+
+.hexagon::after {
+    left: 0%;
+    transform: rotate(-60deg);
+}
+
+.hexagon, .hexagon::before, .hexagon::after {
+    background: transparent;
+    border: 0.04vw solid #fff;
+    border-top: 0.04vh solid transparent;
+    border-bottom: 0.04vh solid transparent;
+}
