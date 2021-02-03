@@ -4,10 +4,36 @@
     </div>
 
     <div class="review">
-        <p class="text-light text-left mt-5 " *ngFor="let parag of detail.details">{{parag.code}} - {{parag.content}}</p>
+        <h3>Description</h3>
+        <ul>
+            <li class="list-element" *ngFor="let parag of detail.details">
+                <h4>{{parag.code}}</h4>
+                <br><p>{{parag.content}}</p>
+            </li>
+        </ul>
     </div>
-
-    <div class="score p-3">
+    <div class="review" >
+        <h3>Place</h3>
+        <div style="  margin: 3vh;">
+            <h4>Remote: </h4><p>{{remote}}</p>
+            <h4>Anywhere: </h4><p>{{anywhere}}</p>
+        </div>
     </div>
-
+    <div class="review" >
+        <h3>Strengths</h3>
+        <ul>
+            <div class="inlineContainer">
+                <li class="list-element"  *ngFor="let skill of detail.strengths">
+                    <h4>{{skill.name}}:</h4>
+                    <p>{{skill.experience}}</p>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <div class="review" >
+        <h3>Compensation</h3>
+        <div style="  margin: 3vh;">
+            <h4>Payment: </h4><p>{{detail.compensation.minAmount | currency:detail.compensation.currency}} - {{detail.compensation.maxAmount | currency:detail.compensation.currency}} - {{detail.compensation.periodicity}}</p>
+        </div>
+    </div>
 </div>

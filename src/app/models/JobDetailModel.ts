@@ -20,5 +20,5 @@ export interface JobDetailModel{
     place:PlaceDetails;
     strengths:Skill[];
     organizations:Organization[];
-    compensation:CompensationDetails[]
+    compensation:CompensationDetails
 }

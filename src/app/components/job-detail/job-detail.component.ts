@@ -12,6 +12,9 @@ export class JobDetailComponent implements OnInit {
 
   detail:JobDetailModel;
   isLoaded = false;
+
+  remote = "";
+  anywhere = "";
   constructor(private route: ActivatedRoute,
               private _jobService:JobsService) { }
 
@@ -20,6 +23,8 @@ export class JobDetailComponent implements OnInit {
     this._jobService.getDetailJob(id).subscribe(response => {
       this.detail = response
       this.isLoaded = true;
+      this.remote = this.detail.place.remote? "Yes" : "No";
+      this.anywhere = this.detail.place.anywhere? "Yes" : "No";
     });
 
   }
