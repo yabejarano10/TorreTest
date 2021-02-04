@@ -24,7 +24,7 @@ p {
 
 .header-text {
   position: relative;
-  margin: 10px;
+  margin: auto;
   color: rgb(255, 255, 255);
   text-align: center;
   top: -450%;
